@@ -1,0 +1,8 @@
+.container-auth{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  /* background-color: rgb(104, 114, 116); */
+}

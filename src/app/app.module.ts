@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { SharedModule } from './shared/shared.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { MaterialModule } from './material/material.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { MaterialModule } from './material/material.module';
     AppRoutingModule,
     AuthModule,
     SharedModule,
-    MaterialModule
+    HttpClientModule,
   ],
   providers: [
     provideClientHydration(withEventReplay()),

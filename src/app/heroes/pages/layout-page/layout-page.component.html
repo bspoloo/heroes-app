@@ -1,6 +1,33 @@
-<p>layout-page works of Heroes!</p>
-<router-outlet></router-outlet>
+<mat-sidenav-container class="sidenav-container p-2">
+  <!-- Sidebar -->
+  <mat-sidenav #sidenav mode="side" [opened]="false" [ngStyle]="{ width: '250px' }">
+    <mat-toolbar>
+      <span>Menú</span>
+      <span class="spacer"></span>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-toolbar>
 
-<footer>
-  <h1>this is the footer</h1>
-</footer>
+    <mat-nav-list>
+      <mat-list-item *ngFor="let item of sideBarItems" [routerLink]="item.url" (cdkAutofill)="sidenav.toggle()">
+        <mat-icon>{{item.icon}}</mat-icon>
+        {{item.label}}
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Contenido principal -->
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Heroes Pages</span>
+    </mat-toolbar>
+
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,8 @@
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 30%;
+  background-color: rgb(104, 114, 116);
+}

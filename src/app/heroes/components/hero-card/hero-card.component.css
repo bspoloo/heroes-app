@@ -1,0 +1,18 @@
+.hero-card {
+  max-width: 400px;
+  margin: 16px auto;
+  padding: 16px;
+}
+
+.hero-avatar {
+  background: url('https://st2.depositphotos.com/2459687/10388/v/450/depositphotos_103886360-stock-illustration-manga-comic-book-flash-explosion.jpg') center/cover no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+mat-chip {
+  background-color: #e0e0e0;
+  color: #333;
+  margin-right: 4px;
+}
