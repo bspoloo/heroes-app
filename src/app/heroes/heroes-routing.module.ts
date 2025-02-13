@@ -12,6 +12,11 @@ const routes: Routes = [
     component: LayoutPageComponent,
     children: [
       {
+        path: '',
+        redirectTo: 'list',
+        pathMatch: 'full',
+      },
+      {
         path: 'new-hero',
         component: NewPageComponent,
       },
@@ -28,12 +33,13 @@ const routes: Routes = [
         component: ListPageComponent,
       },
       {
-        path: 'view:id',
+        path: 'view/:id',
         component: HeroPageComponent,
       },
       {
         path: '**',
-        redirectTo: 'list'
+        redirectTo: 'list',
+        pathMatch: 'full'
       },
     ],
   },

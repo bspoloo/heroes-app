@@ -8,8 +8,11 @@ import { Hero } from '../interfaces/heroes.interface';
 export class LocalImgPipe implements PipeTransform {
 
   transform( hero: Hero): string {
-    if(!hero.id){
+    if(!hero.id && !hero.alt_img){
       return `assets/no-image.png`;
+    }
+    if(hero.alt_img){
+      return hero.alt_img;
     }
     return `assets/heroes/${hero.id}.jpg`;
   }

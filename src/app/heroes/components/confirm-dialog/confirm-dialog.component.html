@@ -1,0 +1,7 @@
+<h2 mat-dialog-title>Delete the superHero {{data.superhero}}?</h2>
+<mat-dialog-content>This will delete the elements that are currently on this page and cannot be undone.</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="this.onNoClick()" color="primary" >Cancel</button>
+  <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+  <button mat-button (click)="this.onConfirm()">Delete</button>
+</mat-dialog-actions>

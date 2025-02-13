@@ -1,1 +1,27 @@
-<p>hero-page works!</p>
+<ng-template #divLoading>
+  <div class="loading-container">
+    <mat-spinner></mat-spinner>
+    <p>Cargando héroe...</p>
+  </div>
+</ng-template>
+
+<mat-card *ngIf="hero; else divLoading" class="hero-card">
+  <mat-card-header>
+    <mat-card-title>{{ hero.alter_ego }}</mat-card-title>
+    <mat-card-subtitle>{{ hero.superhero }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <mat-list>{{hero.first_appearance}}</mat-list>
+    <mat-list>{{hero.characters}}</mat-list>
+    <mat-list>{{hero.publisher}}</mat-list>
+    <mat-list>{{hero.alter_ego}}</mat-list>
+  </mat-card-content>
+  <button mat-button color="warn" (click)="this.goBack()">
+    Go Back
+  </button>
+
+  <mat-card-content>
+    <img [src]="hero | localImg" [alt]="hero.superhero" class="hero-image">
+  </mat-card-content>
+</mat-card>

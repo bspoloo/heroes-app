@@ -1,1 +1,66 @@
-<p>new-page works!</p>
+<h1>Edit/Add Hero</h1>
+<small>Superman</small>
+
+<mat-divider class="mb-3"></mat-divider>
+
+<form class="form-container" [formGroup]="this.heroForm">
+  <mat-card>
+    <mat-card-content>
+      <div class="form-grid">
+        <!-- Campo Super Hero -->
+        <mat-form-field class="form-field">
+          <mat-label>Super Hero</mat-label>
+          <input type="text" matInput required placeholder="Enter hero name" formControlName="superhero" />
+        </mat-form-field>
+
+        <!-- Campo Alter Ego -->
+        <mat-form-field class="form-field">
+          <mat-label>Alter Ego</mat-label>
+          <input type="text" matInput required placeholder="Enter alter ego" formControlName="alter_ego" />
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+          <mat-label>First Appereance</mat-label>
+          <input type="text" matInput required placeholder="Enter alter ego" formControlName="first_appearance" />
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+          <mat-label>Characters</mat-label>
+          <input type="text" matInput required placeholder="Enter alter ego" formControlName="characters"/>
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+          <mat-label>Creador</mat-label>
+          <mat-select required formControlName="publisher">
+            <mat-option
+              *ngFor="let publisher of pusblishers"
+              [value]="publisher.id"
+              >{{ publisher.value }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Alternative Image</mat-label>
+          <input type="text" matInput required formControlName="alt_img">
+        </mat-form-field>
+
+        <div class="col-12 justify-content-center">
+          <mat-card>
+            <img [src]="this.getCurrentHero() | localImg" alt="new image superhero" matCardImage width="300px">
+          </mat-card>
+        </div>
+
+        <button mat-flat-button color="warn" (click)="this.onDeleteHero()" *ngIf="this.getCurrentHero()">
+          <mat-icon>delete</mat-icon>
+          Delete
+        </button>
+        <span class="spacer"></span>
+        <button mat-flat-button color="primary" (click)="this.OnSubmit()">
+          <mat-icon>save</mat-icon>
+          Save
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</form>
