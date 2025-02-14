@@ -9,12 +9,25 @@
       </button>
     </mat-toolbar>
 
+    <div>
+      <p>User name: {{getCurrentUser()?.user}}</p>
+      <p>User email: {{getCurrentUser()?.email}}</p>
+    </div>
+
     <mat-nav-list>
       <mat-list-item *ngFor="let item of sideBarItems" [routerLink]="item.url" (cdkAutofill)="sidenav.toggle()">
         <mat-icon>{{item.icon}}</mat-icon>
         {{item.label}}
       </mat-list-item>
     </mat-nav-list>
+
+    <mat-nav-list>
+      <mat-list-item (click) = "this.onLogout()">
+        <mat-icon>logout</mat-icon>
+        Logout
+      </mat-list-item>
+    </mat-nav-list>
+
   </mat-sidenav>
 
   <!-- Contenido principal -->

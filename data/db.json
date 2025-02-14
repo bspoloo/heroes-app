@@ -1,12 +1,33 @@
 {
   "users": [
     {
-      "id": "1",
-      "usuario": "John Doe",
+      "id": 1,
+      "user": "John Doe",
       "email": "john.due@gmail.com"
+    },
+    {
+      "id": 2,
+      "user": "John Doe2",
+      "email": "john.due@gmail.com2"
     }
   ],
   "heroes": [
+    {
+      "id": "dc-batman",
+      "superhero": "Batman",
+      "publisher": "DC Comics",
+      "alter_ego": "Bruce Wayne",
+      "first_appearance": "Detective Comics #27",
+      "characters": "Bruce Wayne"
+    },
+    {
+      "id": "dc-superman",
+      "superhero": "Superman",
+      "publisher": "DC Comics",
+      "alter_ego": "Kal-El",
+      "first_appearance": "Action Comics #1",
+      "characters": "Kal-El"
+    },
     {
       "id": "dc-flash",
       "superhero": "Flash",
@@ -150,141 +171,6 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
-    },
-    {
-      "id": "",
-      "superhero": "re",
-      "publisher": "Marvel commics",
-      "alter_ego": "er",
-      "first_appearance": "rer",
-      "characters": "ere",
-      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH1dKJbWFb0tJ2Nl9I79Wt6XYIJq0ux5eE6A&s"
-    },
-    {
-      "id": "",
-      "superhero": "re",
-      "publisher": "Marvel commics",
-      "alter_ego": "er",
-      "first_appearance": "rer",
-      "characters": "ere",
-      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH1dKJbWFb0tJ2Nl9I79Wt6XYIJq0ux5eE6A&s"
-    },
-    {
-      "id": "",
-      "superhero": "re",
-      "publisher": "Marvel commics",
-      "alter_ego": "er",
-      "first_appearance": "rer",
-      "characters": "ere",
-      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH1dKJbWFb0tJ2Nl9I79Wt6XYIJq0ux5eE6A&s"
-    },
-    {
-      "id": "",
-      "superhero": "re",
-      "publisher": "Marvel commics",
-      "alter_ego": "er",
-      "first_appearance": "rer",
-      "characters": "ere",
-      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH1dKJbWFb0tJ2Nl9I79Wt6XYIJq0ux5eE6A&s"
-    },
-    {
-      "id": "",
-      "superhero": "ewe",
-      "publisher": "Marvel commics",
-      "alter_ego": "ewew",
-      "first_appearance": "we",
-      "characters": "wew",
-      "alt_img": "https://play-lh.googleusercontent.com/7Ac5TgaL15Ra4bvFVHJKCdJp4qvnL4djZj5bKc6RN-MZjzrvkeHbJytek0NPTSdZcp86XYIJq0ux5eE6A&s"
-    },
-    {
-      "id": "",
-      "superhero": "ewe",
-      "publisher": "Marvel commics",
-      "alter_ego": "ewew",
-      "first_appearance": "we",
-      "characters": "wew",
-      "alt_img": "https://play-lh.googleusercontent.com/7Ac5TgaL15Ra4bvFVHJKCdJp4qvnL4djZj5bKc6RN-MZjzrvkeHbJytek0NPTSdZcp86XYIJq0ux5eE6A&s"
-    },
-    {
-      "id": "",
-      "superhero": "Obcaecati enim ea fu",
-      "publisher": "DC Comics",
-      "alter_ego": "Ut labore officiis e",
-      "first_appearance": "Quisquam quis dolore",
-      "characters": "Est elit officia al",
-      "alt_img": "https://play-lh.googleusercontent.com/7Ac5TgaL15Ra4bvFVHJKCdJp4qvnL4djZj5bKc6RN-MZjzrvkeHbJytek0NPTSdZcp8"
-    },
-    {
-      "id": "",
-      "superhero": "Obcaecati enim ea fu",
-      "publisher": "DC Comics",
-      "alter_ego": "Ut labore officiis e",
-      "first_appearance": "Quisquam quis dolore",
-      "characters": "Est elit officia al",
-      "alt_img": "https://play-lh.googleusercontent.com/7Ac5TgaL15Ra4bvFVHJKCdJp4qvnL4djZj5bKc6RN-MZjzrvkeHbJytek0NPTSdZcp8"
-    },
-    {
-      "id": "",
-      "superhero": "Distinctio Suscipit",
-      "publisher": "DC Comics",
-      "alter_ego": "Aut in qui ad tenetu",
-      "first_appearance": "Eu culpa in et quia",
-      "characters": "Non neque consequunt",
-      "alt_img": "https://play-lh.googleusercontent.com/7Ac5TgaL15Ra4bvFVHJKCdJp4qvnL4djZj5bKc6RN-MZjzrvkeHbJytek0NPTSdZcp8"
-    },
-    {
-      "id": "DC Comics - Perferendis quod eni",
-      "superhero": "Perferendis quod eni",
-      "publisher": "DC Comics",
-      "alter_ego": "Praesentium doloremq",
-      "first_appearance": "Molestiae dolorum is",
-      "characters": "Et labore aliquid vo",
-      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH1dKJbWFb0tJ2Nl9I79Wt6XYIJq0ux5eE6A&s"
-    },
-    {
-      "id": "DC Comics - alias dolore qui in ",
-      "superhero": "Alias dolore qui in ",
-      "publisher": "DC Comics",
-      "alter_ego": "Cupidatat omnis cupi",
-      "first_appearance": "Aut et ipsum sapient",
-      "characters": "Omnis labore digniss",
-      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH1dKJbWFb0tJ2Nl9I79Wt6XYIJq0ux5eE6A&s"
-    },
-    {
-      "id": "DC Comics-pariatur",
-      "superhero": "Pariatur Omnis volu",
-      "publisher": "DC Comics",
-      "alter_ego": "Pariatur Quam ex qu",
-      "first_appearance": "Nostrud adipisicing ",
-      "characters": "Dolores aut aut et d",
-      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH1dKJbWFb0tJ2Nl9I79Wt6XYIJq0ux5eE6A&s"
-    },
-    {
-      "id": "DC Comics-ut",
-      "superhero": "Ut ex nihil obcaecat",
-      "publisher": "DC Comics",
-      "alter_ego": "Illo eum aspernatur ",
-      "first_appearance": "Distinctio Aliquam ",
-      "characters": "Voluptas officiis qu",
-      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG_FiUw8YeAAGOkzCB9u_6Ro-K4e1P88Bw6Q&s"
-    },
-    {
-      "id": "DC Comics-sapiente",
-      "superhero": "Sapiente magna eum p",
-      "publisher": "DC Comics",
-      "alter_ego": "Impedit aut quam qu",
-      "first_appearance": "Est qui deserunt ull",
-      "characters": "Distinctio Tempor t",
-      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvo0Qm7b2GauUw3bhbTkpvczbK2B2OD1KnYw&s"
-    },
-    {
-      "id": "DC Comics-dolorem",
-      "superhero": "Dolorem adipisicing ",
-      "publisher": "DC Comics",
-      "alter_ego": "Libero cum qui nobis",
-      "first_appearance": "Fugiat nostrud labo",
-      "characters": "Omnis provident nis",
-      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvo0Qm7b2GauUw3bhbTkpvczbK2B2OD1KnYw&s"
     }
   ]
 }
