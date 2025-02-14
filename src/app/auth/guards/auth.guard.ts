@@ -17,11 +17,11 @@ export class AuthGuard implements CanMatch, CanActivate{
       })
     );
   }
-  canMatch(route: Route, segments: UrlSegment[]): MaybeAsync<GuardResult> {
+  public canMatch(route: Route, segments: UrlSegment[]): MaybeAsync<GuardResult> {
     console.log({route, segments});
     return this.checkAuthStatus();
   }
-  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): MaybeAsync<GuardResult> {
+  public canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): MaybeAsync<GuardResult> {
     console.log({route, state});
     return this.checkAuthStatus();
   }
